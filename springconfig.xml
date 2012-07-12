@@ -12,6 +12,7 @@
      http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 
+	<aop:aspectj-autoproxy />
 	<bean id="customerService" class="customers.CustomerService">
 		<property name="customerDAO" ref="customerDAO" />
 		<property name="emailSender" ref="emailSender" />
