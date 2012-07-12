@@ -12,6 +12,7 @@
      http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 
+	<aop:aspectj-autoproxy />
 	<bean id="customerService" class="customers.CustomerService">
 		<property name="customerDAO" ref="customerDAO" />
 		<property name="emailSender" ref="emailSender" />
@@ -19,5 +20,4 @@
 	<bean id="customerDAO"  class="customers.CustomerDAO" />
 	<bean id="emailSender"  class="customers.EmailSender" />
 	<bean id="traceAdvice1" class="customers.TraceAdvice1" />
-	<bean id="traceAdvice2" class="customers.TraceAdvice2" />
 </beans>
